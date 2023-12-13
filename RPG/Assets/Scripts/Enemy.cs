@@ -75,7 +75,7 @@ public class Enemy : MonoBehaviourPun
 
     void DetectPlayer()
     {
-        if (Time.time - lastPlayerDetectTime > playerDetectRate)
+        if (Time.time - lastPlayerDetectTime > playerDetectRate && GameManager.instance.gameHasStarted)
         {
             lastPlayerDetectTime = Time.time;
 

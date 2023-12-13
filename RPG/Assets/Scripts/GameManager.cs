@@ -12,7 +12,8 @@ public class GameManager : MonoBehaviourPun
     public Transform[] spawnPoints;
     public float respawnTime;
     
-    private int playersInGame;
+    private int playersInGame = 0;
+    public bool gameHasStarted = false;
 
     // instance
     public static GameManager instance;
@@ -37,6 +38,7 @@ public class GameManager : MonoBehaviourPun
         {
             Debug.Log("Spawning Player");
             SpawnPlayer();
+            gameHasStarted = true;
         }
     }
 
