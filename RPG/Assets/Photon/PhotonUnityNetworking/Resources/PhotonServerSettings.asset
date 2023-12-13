@@ -36,6 +36,16 @@ MonoBehaviour:
   RpcList:
   - ClickRpc
   - DestroyRpc
+  - ChangeScene
+  - FlashDamage
+  - GiveGold
+  - Heal
+  - ImInGame
+  - Initialize
+  - Log
+  - TakeDamage
+  - UpdateHealthBar
+  - UpdateLobbyUI
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 0
